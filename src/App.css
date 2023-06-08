@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  .header{
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
+.header{
+  text-align: center;
+  font-weight: 500;
+}
+
+.banner{
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.3)),  url(./components/img/pic1.jpg);
+  height: 700px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+
+
+.banner-{
+  height: 700px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ .Banner-btn{
+  padding-top: 50px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+/* 
+.Banner-btn button{
+  padding: 15px 20px;
+  color: black;
+  background-color: white;
+} */
+
+/* Menu secton  */
+
+
+.menus{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.menu{
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(215, 215, 215, 0.4);
+}
+
+.menu img{
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.menu h3{
+  margin: 10px 0;
+  font-weight: 500;
+  color: rgb(62, 61, 61);
+}
+
+.menu p{
+  line-height: 1.8;
+  color: #656565;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.menu h4{
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.menu button{
+  /* padding: 15px 25px;
+  display: block;
+  margin: 20px 0 20px 0;
+  background-color: rgb(157, 94, 94)  ;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  outline: none ;
+  border-radius: 5px; */
+}
+
+.counter{
+  margin: 20px 0;
+  width: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba 201 201 201 0.4;
+  text-align: center;
+}
+
+.counter h2{
+  font-size: 45px;
+  margin: 10px 0 20px 0;
+  font-weight: 500;
+}
+
+.counterbtn{
+  display: flex;
+  gap: 10px;
+}
+
+.counterbtn button{
+  padding: 20px 30px;
+  background-color: rgb(157, 94, 94)  ;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+
+}
+
+/* props exp */
+.btn{
+
+}

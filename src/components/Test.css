@@ -1,0 +1,25 @@
+.Test{
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.Test ul{
+    display: flex;
+    list-style: none;
+}
+.Test li{
+    padding-inline: 10px;
+}
+
+.Nav-list{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+/* .backgroundimg{
+    width: 100%;
+} */
