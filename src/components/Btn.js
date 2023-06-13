@@ -1,4 +1,4 @@
-function Btn({title, bgColor,color,border,padding, clickFunc }){
+function Btn({title, bgColor,color,border,padding, clickFunc, width }){
     const BtnStyle = {
             background: bgColor,
             color: color? color : "white",
@@ -8,7 +8,8 @@ function Btn({title, bgColor,color,border,padding, clickFunc }){
             border: border? border : "none",
             outline: "none",
             display: "inline-block",
-            margin: "10px"
+            margin: "10px",
+            width: width
     }
     return(
         <button style={BtnStyle} onClick={clickFunc}>{title}</button>

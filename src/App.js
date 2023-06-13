@@ -8,7 +8,9 @@ import Counter from "./Pages/Counter";
 import Aabout from './Afiadinma/About'
 import Cont from './Afiadinma/Cont'
 import ClassComp from "./Pages/classComp"
+import Posts from "./Pages/Posts"
 import "./App.css"
+import UserDetails from "./Pages/UserDetails";
 
 function App(){
   // let person = "tokonih"
@@ -23,6 +25,8 @@ function App(){
           <Route path= '/Aabout' element={<Aabout/>}/>
           <Route path= '/Cont' element={<Cont/>}/>
           <Route path= '/classComp' element={<ClassComp/>}/>
+          <Route path= '/userDetails' element={<UserDetails/>}/>
+          <Route path= '/Posts' element={<Posts/>}/>
       </Routes>
     </BrowserRouter>
   );

@@ -23,12 +23,14 @@ function Test(){
             <Link className="Nav-list"  to='/Contact'>Contact</Link> </li>
             <li className = "lists"> 
             <Link className="Nav-list"  to='/Counter'>Counter</Link> </li>
-            <li className = "lists"> 
+            {/* <li className = "lists"> 
             <Link className="Nav-list"  to='/Cont'>ACounter</Link> </li>
             <li className = "lists"> 
-            <Link className="Nav-list"  to='/Aabout'>Aabout</Link> </li>
+            <Link className="Nav-list"  to='/Aabout'>Aabout</Link> </li> */}
             <li className = "lists"> 
             <Link className="Nav-list"  to='/classComp'>classComp</Link> </li>
+            <li className = "lists"> 
+            <Link className="Nav-list"  to='/Posts'>Posts</Link> </li>
         </ul>
     </header>
     )

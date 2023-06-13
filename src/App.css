@@ -135,3 +135,69 @@ body{
 .btn{
 
 }
+
+
+/* contact */
+.form{
+  width: 50%;
+  margin: 0 auto;
+  /* background-color: white; */
+}
+
+.form-container::after{
+  background-color: #5887A4;
+  content: ' ';
+  height:150px ;
+  width: 150p;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.form-container::before{
+  background-color: #5887A4;
+  content: ' ';
+  height:200px ;
+  width: 200p;
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+
+.form-group{
+  margin-bottom: 20px;
+
+}
+
+.form-group input:not([type = 'checkbox']), 
+.form-group select,
+.form-group textarea{
+  width: 100%;
+  padding: 10px 5px;
+  outline: none;
+}
+
+.form-group label{
+  font-size:14px ;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+
+.form-checkbox span{
+  font-size: 14px;
+
+}
+
+span{
+  color: red;
+  font-size: 14px;
+}
