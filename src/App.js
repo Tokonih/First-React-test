@@ -11,6 +11,7 @@ import ClassComp from "./Pages/classComp"
 import Posts from "./Pages/Posts"
 import "./App.css"
 import UserDetails from "./Pages/UserDetails";
+import FoodDetails from "./FoodDetails";
 
 function App(){
   // let person = "tokonih"
@@ -20,6 +21,7 @@ function App(){
           <Route path="/" element={<Home/>}/>
           <Route path='/About' element={<About/>}/>
           <Route path ='/Menu' element={<Menu/>}/>
+          <Route path ='/Menu/:id' element={<FoodDetails/>}/>
           <Route path= '/Contact' element={<Contact/>}/>
           <Route path= '/Counter' element={<Counter/>}/>
           <Route path= '/Aabout' element={<Aabout/>}/>

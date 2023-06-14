@@ -52,8 +52,20 @@ body{
 
 /* Menu secton  */
 
-
+.display{
+  width: 100%;
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-between;
+}
+.menu-container{
+  /* height: ; */
+  width: 20%;
+  background-color: red;
+  /* color: whte; */
+}
 .menus{
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
