@@ -43,12 +43,7 @@ function Menu() {
         });
     };
 
-    // const catig = (value) =>{
-    //   fetch("https://free-food-menus-api-production.up.railway.app/best-foods")
-    //   .then((resp) => resp.json())
-    //   .then((links) => 
-    //   )
-    // }
+
 
     const rating = (num) => '⭐'.repeat(num) 
 

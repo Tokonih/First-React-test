@@ -126,7 +126,6 @@ form button {
 }
 
 .food-details {
-  /* height: 200px; */
   width: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -248,6 +247,23 @@ form button {
     width: 100%;
   }
 }
+
+/* Blog */
+.blog-banner{
+  min-height: 400px;
+  background-image:linear-gradient( rgba(0,0,0,.4), rgba(0,0,0,0.5)), url(./Component/img/banner3.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.blog-banner h1{
+  font-size: 45px;
+}
+
 
 @media (max-width: 427px) {
   .Approach-2 div {
