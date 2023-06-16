@@ -1,8 +1,4 @@
 import Test from "../components/Test";
-// import img from "../components/img/food.avif";
-// import img2 from "../components/img/food 2.avif";
-// import img3 from "../components/img/food 3.avif";
-// import img4 from "../components/img/chicken peppersoup.avif";
 import { useEffect, useState } from "react";
 import Btn from "../components/Btn";
 import { Link } from "react-router-dom";
@@ -27,19 +23,22 @@ function Menu() {
       "steaks",
     ];
 
-    const getMenu = () => {
-      fetch("https://free-food-menus-api-production.up.railway.app/best-foods")
-        .then((resp) => resp.json())
-        .then((data) => {
-          setFoodArr(data);
-        });
-    };
+    // const getMenu = () => {
+    //   fetch("https://free-food-menus-api-production.up.railway.app/best-foods")
+    //     .then((resp) => resp.json())
+    //     .then((data) => {
+    //       setFoodArr(data);
+    //     });
+    // };
 
     const getCategory = (cat) => {
       fetch(`https://free-food-menus-api-production.up.railway.app/${cat}`)
         .then((resp) => resp.json())
         .then((category) => {
-          setFoodArr(category);
+          const foodArr = category.map((food) => {
+            return{ ...food, category:cat}
+          })
+          setFoodArr(foodArr);
           console.log(category);
         });
     };
@@ -51,10 +50,11 @@ function Menu() {
     //   )
     // }
 
+    const rating = (num) => '⭐'.repeat(num) 
 
 
     useEffect(() => {
-      getMenu();
+      getCategory("best-foods");
     }, []);
 
     const deleteBtn = (id) => {
@@ -65,7 +65,7 @@ function Menu() {
 
     return (
       <div className="menu-page">
-        <Test />
+        <Test />;
         <div>
           <h1 className="header">This is Menu</h1>
         </div>
@@ -86,11 +86,13 @@ function Menu() {
 
         <div className="menus">
           {foodArr.map((food, i) => (
-            <Link to={`/menu/${food.id}`}  className="menu" key={i}>
+            <Link to={`/menu/${food.category}/${food.id}`}  className="menu" key={i}>
               <img src={food.img} alt="" />
               <h3>{food.name}</h3>
               <p>{food.dsc}</p>
+              
               <h4>{food.price}</h4>
+              <p>{rating(food.rate)}</p>
               <Btn
                 bgColor="#fb4d3b"
                 title="Order"

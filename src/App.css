@@ -58,12 +58,29 @@ body{
   align-items:flex-start;
   justify-content: space-between;
 }
-.menu-container{
-  /* height: ; */
+
+.menu-container {
   width: 20%;
-  background-color: red;
-  /* color: whte; */
+  height: 1000px;
+  background-color: whitesmoke;
+  color: black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 110px;
+
 }
+
+.menu-tabs button{
+  display: block;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 15px;
+  cursor: pointer;
+    text-transform: capitalize;
+  font-weight: 700;
+}
+
 .menus{
   width: 80%;
   display: grid;
@@ -74,13 +91,15 @@ body{
 .menu{
   padding: 5px;
   border-radius: 10px;
+  text-decoration: none;
   box-shadow: 2px 2px 10px rgba(215, 215, 215, 0.4);
 }
 
 .menu img{
-  height: auto;
+  height: 400px;
   width: 100%;
   border-radius: 5px;
+  object-fit: cover; 
 }
 
 .menu h3{
