@@ -1,7 +1,13 @@
 import "./Test.css";
 import {Link} from "react-router-dom";
+import {IoCartOutline} from 'react-icons/io5';
+import { FoodContext } from "../context/FoodContext";
+import { useContext } from "react";
+
 
 function Test(){
+    const contextData = useContext(FoodContext);
+    const {cart } = contextData
     // const lists = {
     //     padding: "10px",
     //     backgroundColor: "blue", 
@@ -31,6 +37,11 @@ function Test(){
             <Link className="Nav-list"  to='/classComp'>classComp</Link> </li>
             <li className = "lists"> 
             <Link className="Nav-list"  to='/Posts'>Posts</Link> </li>
+            <li className = "lists"> 
+            <Link className="Nav-list"  to='/Cart'>
+            <IoCartOutline className="cart_icon"/>
+            <span className="cart_count">{cart.length}</span>
+            </Link> </li>
         </ul>
     </header>
     )

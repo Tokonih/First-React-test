@@ -12,11 +12,14 @@ import Posts from "./Pages/Posts"
 import "./App.css"
 import UserDetails from "./Pages/UserDetails";
 import FoodDetails from "./FoodDetails";
+import Cart from "./Pages/Cart";
+import FoodProvider from "./context/FoodContext";
 
 function App(){
   // let person = "tokonih"
   return (
-    <BrowserRouter>
+    <FoodProvider>
+          <BrowserRouter>
       <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path='/About' element={<About/>}/>
@@ -25,12 +28,14 @@ function App(){
           <Route path= '/Contact' element={<Contact/>}/>
           <Route path= '/Counter' element={<Counter/>}/>
           <Route path= '/Aabout' element={<Aabout/>}/>
+          <Route path= '/Cart' element={<Cart/>}/>
           <Route path= '/Cont' element={<Cont/>}/>
           <Route path= '/classComp' element={<ClassComp/>}/>
           <Route path= '/userDetails' element={<UserDetails/>}/>
           <Route path= '/Posts' element={<Posts/>}/>
       </Routes>
     </BrowserRouter>
+    </FoodProvider>
   );
 };
 

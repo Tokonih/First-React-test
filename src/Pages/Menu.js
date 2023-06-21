@@ -43,8 +43,6 @@ function Menu() {
         });
     };
 
-
-
     const rating = (num) => '⭐'.repeat(num) 
 
 
