@@ -1,10 +1,10 @@
 .Test{
     padding: 10px;
-    background-color: black;
+    background-color: #f5f1ee;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: white;
+    color: black;
     /* position: fixed; */
 }
 
@@ -17,9 +17,9 @@
 }
 
 .Nav-list{
-    color: white;
+    color: black;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
 }
 /* .backgroundimg{
     width: 100%;

@@ -10,11 +10,12 @@ body{
     text-align: center;
     font-weight: 500;
   }
+  background-color: white;
 }
 
 .header{
-  text-align: center;
-  font-weight: 500;
+  /* text-align: center;
+  font-weight: 500; */
 }
 
 .banner{
@@ -51,22 +52,33 @@ body{
 } */
 
 /* Menu secton  */
+.menu-page h1{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight:700 ;
+}
 
 .display{
   width: 100%;
+  margin: auto;
   display: flex;
-  align-items:flex-start;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;;
 }
 
 .menu-container {
   width: 20%;
-  height: 1000px;
-  background-color: whitesmoke;
+  height: 750px;
+  background-color: 
+#f5f1ee;
   color: black;
   position: -webkit-sticky;
   position: sticky;
-  top: 110px;
+  top: 30px;
+  border-radius: 10px;
 
 }
 
@@ -79,33 +91,39 @@ body{
   cursor: pointer;
     text-transform: capitalize;
   font-weight: 700;
+  border: none;
+  background-color: 
+#dbd5ce;
 }
 
 .menus{
   width: 80%;
+  /* height: 300px; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
 .menu{
-  padding: 5px;
+  padding: 20px;
   border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(214, 214, 214, 0.9);
   text-decoration: none;
-  box-shadow: 2px 2px 10px rgba(215, 215, 215, 0.4);
+  color: black;
 }
 
 .menu img{
-  height: 400px;
+  /* height: 300px; */
   width: 100%;
+  object-fit:cover;
   border-radius: 5px;
-  object-fit: cover; 
 }
 
 .menu h3{
-  margin: 10px 0;
-  font-weight: 500;
-  color: rgb(62, 61, 61);
+    margin: 10px 0;
+    font-weight: 500;
+    color: rgba(62, 61, 61);
+  
 }
 
 .menu p{
