@@ -4,9 +4,11 @@ export const FoodContext = createContext();
 
 function FoodProvider(props){
     const [cart, setCart] = useState([]);
+    let localData = JSON.parse(localStorage.getItem("tk-food"))
     useEffect(()=>{
-        let localStorageCart = JSON.parse(localStorage.getItem("tk-food"))
-        setCart(localStorageCart)
+        if (localData){
+            setCart(localData)
+        }
     },[])
 
     return(
