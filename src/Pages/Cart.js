@@ -10,7 +10,7 @@ function Cart(){
     const increraseCartItem = (menu) => {
         const existingCartData = [...cart];
         const increasedQty = existingCartData.map((items)=> {
-            if(items.id === menu.id){
+            if(items.id === menu.id){// this is making sure we are getting the particular item in cart we wan to increase 
                 menu.quantity += 1;
                 menu.totalPrice = menu.price * menu.quantity
             }

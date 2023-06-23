@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Btn from "./components/Btn";
 import { FoodContext } from "./context/FoodContext";
 import { useContext } from "react";
+import Footer from "./Pages/Footer";
 
 function FoodDetails() {
   const { category, id } = useParams();

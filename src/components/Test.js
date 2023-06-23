@@ -17,7 +17,7 @@ function Test(){
     // }
     return(
     <header className="Test">
-        <h1 style={{color: "black", fontSize: "40px"}}>logo</h1>
+        <Link to= "/"><h1 style={{color: "black", fontSize: "40px" , textdecoration: "none"}}>logo</h1></Link>
         <ul>
             <li className = "lists"> 
             <Link className="Nav-list" to='/'>Home</Link> </li>

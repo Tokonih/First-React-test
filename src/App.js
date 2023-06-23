@@ -14,6 +14,7 @@ import UserDetails from "./Pages/UserDetails";
 import FoodDetails from "./FoodDetails";
 import Cart from "./Pages/Cart";
 import FoodProvider from "./context/FoodContext";
+import Footer from "./Pages/Footer";
 
 function App(){
   // let person = "tokonih"
@@ -33,6 +34,7 @@ function App(){
           <Route path= '/classComp' element={<ClassComp/>}/>
           <Route path= '/userDetails' element={<UserDetails/>}/>
           <Route path= '/Posts' element={<Posts/>}/>
+          <Route path= '/Footer' element={<Footer/>}/>
       </Routes>
     </BrowserRouter>
     </FoodProvider>
