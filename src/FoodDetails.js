@@ -48,7 +48,7 @@ function FoodDetails() {
         <h2>{food.name}</h2>
       </div>
       <div className="food-container">
-        <img src={food.img} alt="food" />
+        <img src={food.img} alt="food" width="60%"/>
         <h2>{food.name}</h2>
         <p>{food.dsc}</p>
         <h3>{food.price}</h3>

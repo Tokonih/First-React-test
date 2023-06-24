@@ -282,6 +282,17 @@ span{
   padding-top: 30px;
 }
 
+.food-container{
+  height: 300px;
+
+  width: 60%;
+  margin: auto;
+}
+
+.food-container img{
+  object-fit: cover;
+}
+
 /* media responsiveness */
 @media(max-width: 780px) {
   .menus{
