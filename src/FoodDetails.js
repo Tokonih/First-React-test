@@ -36,6 +36,9 @@ function FoodDetails() {
     // setCart(addMenu)
   }
 
+  const rating = (num) => '⭐'.repeat(num) 
+
+
   useEffect(() => {
     getFood();
   }, []);
@@ -52,8 +55,8 @@ function FoodDetails() {
         <h2>{food.name}</h2>
         <p>{food.dsc}</p>
         <h3>{food.price}</h3>
-        <h5>{food.rate}</h5>
-        <Btn bgColor="green" title="Add to cart" clickFunc={()=> handleCart(food)} />
+        <h5>{rating (food.rate)}</h5>
+        <Btn bgColor="green" padding="10px 20px" title="Add to cart" clickFunc={()=> handleCart(food)} />
       </div>
       {/* // ) : null } */}
       

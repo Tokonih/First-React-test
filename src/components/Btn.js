@@ -17,3 +17,4 @@ function Btn({title, bgColor,color,border,padding, clickFunc, width }){
 }
 
 export default Btn;
+

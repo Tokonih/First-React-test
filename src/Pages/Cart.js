@@ -35,9 +35,7 @@ const decreaseCartItem = (menu) => {
 
 }
 
-const grandTotal = cart
-.map((item)=> item.totalPrice)
-.reduce((a, b) =>{
+const grandTotal = cart.map((item)=> item.totalPrice).reduce((a, b) =>{
     return a + b;
 })
 

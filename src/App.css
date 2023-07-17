@@ -19,7 +19,7 @@ body{
 }
 
 .banner{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),  url(./components/img/pic1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),  url(./components/img/Food\ banner.jpg);
   height: 700px;
   width: 100%;
   background-size: cover;
@@ -281,15 +281,36 @@ span{
 .copyright p{
   padding-top: 30px;
 }
+.food-display{
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+}
 
+.food-left{
+  width: 30%;
+}
 .food-container{
-  height: 300px;
-
-  width: 60%;
+  /* height: 300px; */
+  width: 40%;
   margin: auto;
 }
 
+.food-right{
+  width: 30%;
+}
+
+.food-header{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .food-container img{
+  width: 650px;
   object-fit: cover;
 }
 
